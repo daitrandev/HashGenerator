@@ -18,6 +18,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasicHashViewController" customModule="HashGenerator" customModuleProvider="target">
             <connections>
+                <outlet property="inputTextField" destination="EaH-xW-O1d" id="fYS-1E-YIL"/>
                 <outlet property="outputTableView" destination="d1V-82-7qp" id="rKv-sy-C73"/>
                 <outlet property="outputTableViewHeightConstraint" destination="ikp-wL-SOK" id="MUz-yu-eSe"/>
                 <outlet property="view" destination="Ccw-f4-bwU" id="T3c-Ug-eq9"/>

@@ -9,6 +9,7 @@
 import UIKit
 
 class BasicHashViewController: UIViewController {
+    @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var outputTableView: UITableView!
     @IBOutlet weak var outputTableViewHeightConstraint: NSLayoutConstraint!
     
@@ -31,6 +32,10 @@ class BasicHashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewModel.delegate = self
+        
+        inputTextField.addTarget(self, action: #selector(inputTextEditingChanged), for: .editingChanged)
         
         outputTableView.register(
             UINib(
@@ -60,8 +65,21 @@ class BasicHashViewController: UIViewController {
         tabBarController?.tabBar.tintColor = UIColor.pinkCoral
     }
     
+    @objc private func inputTextEditingChanged() {
+        viewModel.inputText = inputTextField.text
+    }
+    
     @objc private func didTapRefresh() {
         
+    }
+}
+
+extension BasicHashViewController: BasicHashViewModelDelegate {
+    func reloadOutputTableView() {
+        guard let cells = outputTableView.visibleCells as? [HashOutputCell] else { return }
+        for index in 0..<cells.count {
+            cells[index].configure(with: viewModel.cellLayoutItems[index])
+        }
     }
 }
 

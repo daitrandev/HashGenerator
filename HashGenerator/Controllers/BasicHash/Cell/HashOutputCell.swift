@@ -19,7 +19,7 @@ class HashOutputCell: UITableViewCell {
     }
     
     func configure(with item: BasicHashViewModel.CellLayoutItem) {
-        nameLabel.text = item.name
+        nameLabel.text = item.algorithm.rawValue
         contentTextField.text = item.content
     }
 }
