@@ -30,4 +30,6 @@ class BasicHashViewModel: BasicHashViewModelType {
             .init(name: "SHA512")
         ]
     }
+    
+    
 }
