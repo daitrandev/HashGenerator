@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="118" id="s7Q-6s-hIR" customClass="HashOutputCell" customModule="HashGenerator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s7Q-6s-hIR" id="x2d-AU-L32">
+                <rect key="frame" x="0.0" y="0.0" width="464" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHA245" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mu-1H-mMC">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="bLm-lN-FBi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3d-Re-qrZ">
+                        <rect key="frame" x="88" y="0.0" width="376" height="44"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="tKr-KQ-6fK"/>
+                        </constraints>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="0Mu-1H-mMC" firstAttribute="top" secondItem="h3d-Re-qrZ" secondAttribute="top" id="2WP-Xb-OvV"/>
+                    <constraint firstItem="h3d-Re-qrZ" firstAttribute="leading" secondItem="0Mu-1H-mMC" secondAttribute="trailing" constant="8" id="2sx-JU-br7"/>
+                    <constraint firstAttribute="trailing" secondItem="h3d-Re-qrZ" secondAttribute="trailing" id="BdE-RD-Iru"/>
+                    <constraint firstItem="h3d-Re-qrZ" firstAttribute="top" secondItem="x2d-AU-L32" secondAttribute="top" id="OhH-f6-tw4"/>
+                    <constraint firstAttribute="bottom" secondItem="h3d-Re-qrZ" secondAttribute="bottom" constant="10" id="PKN-Ab-ynT"/>
+                    <constraint firstItem="h3d-Re-qrZ" firstAttribute="centerY" secondItem="x2d-AU-L32" secondAttribute="centerY" id="Yev-SZ-iP2"/>
+                    <constraint firstItem="0Mu-1H-mMC" firstAttribute="leading" secondItem="x2d-AU-L32" secondAttribute="leading" id="Zud-v1-Cvn"/>
+                    <constraint firstItem="0Mu-1H-mMC" firstAttribute="bottom" secondItem="h3d-Re-qrZ" secondAttribute="bottom" id="tqT-Tu-z8L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="contentTextField" destination="h3d-Re-qrZ" id="Qk6-9z-OWQ"/>
+                <outlet property="nameLabel" destination="0Mu-1H-mMC" id="Tof-4k-VGe"/>
+            </connections>
+            <point key="canvasLocation" x="168.11594202898553" y="163.39285714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

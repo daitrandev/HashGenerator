@@ -7,50 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA27049023B744A0006BAD53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA31BFBB22394CAF008B9A81 /* Assets.xcassets */; };
+		D7FE6C2724E55FAC00B37E1D /* BasicHashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7FE6C2624E55FAC00B37E1D /* BasicHashViewController.xib */; };
+		D7FE6C2924E561F800B37E1D /* BasicHashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE6C2824E561F800B37E1D /* BasicHashViewModel.swift */; };
+		D7FE6C2C24E564D400B37E1D /* HashOutputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7FE6C2B24E564D400B37E1D /* HashOutputCell.xib */; };
+		D7FE6C2E24E5680500B37E1D /* HashOutputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE6C2D24E5680500B37E1D /* HashOutputCell.swift */; };
+		D7FE6C3324E5728800B37E1D /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE6C3224E5728800B37E1D /* UIView+Ext.swift */; };
+		D7FE6C3C24E572F200B37E1D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7FE6C3824E572F200B37E1D /* Roboto-Medium.ttf */; };
+		D7FE6C3D24E572F200B37E1D /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7FE6C3924E572F200B37E1D /* Roboto-Light.ttf */; };
+		D7FE6C3E24E572F200B37E1D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7FE6C3A24E572F200B37E1D /* Roboto-Regular.ttf */; };
+		D7FE6C3F24E572F200B37E1D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7FE6C3B24E572F200B37E1D /* Roboto-Bold.ttf */; };
+		D7FE6C4124E5731800B37E1D /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE6C4024E5731800B37E1D /* UIFont+Ext.swift */; };
+		D7FE6C4324E5744700B37E1D /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE6C4224E5744700B37E1D /* UIColor+Ext.swift */; };
 		FA31BFB522394CAD008B9A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFB422394CAD008B9A81 /* AppDelegate.swift */; };
-		FA31BFB722394CAD008B9A81 /* HashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFB622394CAD008B9A81 /* HashViewController.swift */; };
+		FA31BFB722394CAD008B9A81 /* BasicHashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFB622394CAD008B9A81 /* BasicHashViewController.swift */; };
 		FA31BFBC22394CAF008B9A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA31BFBB22394CAF008B9A81 /* Assets.xcassets */; };
 		FA31BFBF22394CAF008B9A81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA31BFBD22394CAF008B9A81 /* LaunchScreen.storyboard */; };
 		FA31BFC722394CEC008B9A81 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFC622394CEC008B9A81 /* MainTabBarController.swift */; };
-		FA31BFCB22394F60008B9A81 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFCA22394F60008B9A81 /* BaseModel.swift */; };
-		FA31BFCD22395033008B9A81 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFCC22395033008B9A81 /* BaseCell.swift */; };
-		FA31BFCF223951AB008B9A81 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFCE223951AA008B9A81 /* Extensions.swift */; };
-		FA31BFD12239524E008B9A81 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFD02239524E008B9A81 /* Helper.swift */; };
-		FA31BFD3223953F5008B9A81 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFD2223953F5008B9A81 /* Constants.swift */; };
-		FA31BFD52239573A008B9A81 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFD42239573A008B9A81 /* BaseViewController.swift */; };
-		FA9BA8F923AE60FE00582E12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFB422394CAD008B9A81 /* AppDelegate.swift */; };
-		FA9BA8FA23AE610200582E12 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFCA22394F60008B9A81 /* BaseModel.swift */; };
-		FA9BA8FB23AE610400582E12 /* HashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFB622394CAD008B9A81 /* HashViewController.swift */; };
-		FA9BA8FC23AE610500582E12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFD42239573A008B9A81 /* BaseViewController.swift */; };
-		FA9BA8FD23AE610700582E12 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFCC22395033008B9A81 /* BaseCell.swift */; };
-		FA9BA8FE23AE610900582E12 /* HMACViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD59B02245E90800200471 /* HMACViewController.swift */; };
-		FA9BA8FF23AE610A00582E12 /* ComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD59B22245ED2E00200471 /* ComparisonViewController.swift */; };
-		FA9BA90023AE610E00582E12 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFCE223951AA008B9A81 /* Extensions.swift */; };
-		FA9BA90123AE610E00582E12 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFD2223953F5008B9A81 /* Constants.swift */; };
-		FA9BA90223AE610E00582E12 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFD02239524E008B9A81 /* Helper.swift */; };
-		FA9BA90323AE610E00582E12 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFC622394CEC008B9A81 /* MainTabBarController.swift */; };
-		FA9BA90523AE611800582E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA31BFBD22394CAF008B9A81 /* LaunchScreen.storyboard */; };
-		FACD59B12245E90800200471 /* HMACViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD59B02245E90800200471 /* HMACViewController.swift */; };
-		FACD59B32245ED2E00200471 /* ComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD59B22245ED2E00200471 /* ComparisonViewController.swift */; };
+		FA31BFD3223953F5008B9A81 /* AdsUnitID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFD2223953F5008B9A81 /* AdsUnitID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7FE6C2624E55FAC00B37E1D /* BasicHashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicHashViewController.xib; sourceTree = "<group>"; };
+		D7FE6C2824E561F800B37E1D /* BasicHashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicHashViewModel.swift; sourceTree = "<group>"; };
+		D7FE6C2B24E564D400B37E1D /* HashOutputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HashOutputCell.xib; sourceTree = "<group>"; };
+		D7FE6C2D24E5680500B37E1D /* HashOutputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashOutputCell.swift; sourceTree = "<group>"; };
+		D7FE6C3224E5728800B37E1D /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		D7FE6C3824E572F200B37E1D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		D7FE6C3924E572F200B37E1D /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		D7FE6C3A24E572F200B37E1D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		D7FE6C3B24E572F200B37E1D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		D7FE6C4024E5731800B37E1D /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		D7FE6C4224E5744700B37E1D /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		FA31BFB122394CAD008B9A81 /* HashGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA31BFB422394CAD008B9A81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA31BFB622394CAD008B9A81 /* HashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashViewController.swift; sourceTree = "<group>"; };
+		FA31BFB622394CAD008B9A81 /* BasicHashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicHashViewController.swift; sourceTree = "<group>"; };
 		FA31BFBB22394CAF008B9A81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA31BFBE22394CAF008B9A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA31BFC022394CAF008B9A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA31BFC622394CEC008B9A81 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		FA31BFCA22394F60008B9A81 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
-		FA31BFCC22395033008B9A81 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
-		FA31BFCE223951AA008B9A81 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		FA31BFD02239524E008B9A81 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		FA31BFD2223953F5008B9A81 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		FA31BFD42239573A008B9A81 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		FA9BA8E523AE60B600582E12 /* HashGeneratorFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashGeneratorFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA9BA90723AE62D400582E12 /* InfoFree.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoFree.plist; sourceTree = "<group>"; };
+		FA31BFD2223953F5008B9A81 /* AdsUnitID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsUnitID.swift; sourceTree = "<group>"; };
 		FACD59B02245E90800200471 /* HMACViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACViewController.swift; sourceTree = "<group>"; };
 		FACD59B22245ED2E00200471 /* ComparisonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,16 +58,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA9BA8E223AE60B600582E12 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7FE6C2A24E564C000B37E1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D7FE6C2B24E564D400B37E1D /* HashOutputCell.xib */,
+				D7FE6C2D24E5680500B37E1D /* HashOutputCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D7FE6C2F24E5727000B37E1D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D7FE6C3124E5727A00B37E1D /* NonUI */,
+				D7FE6C3024E5727700B37E1D /* UI */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D7FE6C3024E5727700B37E1D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D7FE6C3224E5728800B37E1D /* UIView+Ext.swift */,
+				D7FE6C4024E5731800B37E1D /* UIFont+Ext.swift */,
+				D7FE6C4224E5744700B37E1D /* UIColor+Ext.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D7FE6C3124E5727A00B37E1D /* NonUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NonUI;
+			sourceTree = "<group>";
+		};
+		D7FE6C3424E572BC00B37E1D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FA31BFC622394CEC008B9A81 /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D7FE6C3624E572D800B37E1D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D7FE6C3724E572F200B37E1D /* Fonts */,
+				FA31BFBB22394CAF008B9A81 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D7FE6C3724E572F200B37E1D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D7FE6C3824E572F200B37E1D /* Roboto-Medium.ttf */,
+				D7FE6C3924E572F200B37E1D /* Roboto-Light.ttf */,
+				D7FE6C3A24E572F200B37E1D /* Roboto-Regular.ttf */,
+				D7FE6C3B24E572F200B37E1D /* Roboto-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		FA31BFA822394CAD008B9A81 = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				FA31BFB122394CAD008B9A81 /* HashGenerator.app */,
-				FA9BA8E523AE60B600582E12 /* HashGeneratorFree.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,55 +144,37 @@
 		FA31BFB322394CAD008B9A81 /* HashGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				FA31BFB422394CAD008B9A81 /* AppDelegate.swift */,
-				FA31BFC922394F4A008B9A81 /* Model */,
-				FA31BFC822394EBF008B9A81 /* Controller */,
-				FA31BFCE223951AA008B9A81 /* Extensions.swift */,
-				FA31BFD2223953F5008B9A81 /* Constants.swift */,
-				FA31BFD02239524E008B9A81 /* Helper.swift */,
-				FA31BFC622394CEC008B9A81 /* MainTabBarController.swift */,
-				FA31BFBB22394CAF008B9A81 /* Assets.xcassets */,
-				FA31BFBD22394CAF008B9A81 /* LaunchScreen.storyboard */,
 				FA31BFC022394CAF008B9A81 /* Info.plist */,
-				FA9BA90723AE62D400582E12 /* InfoFree.plist */,
+				FA31BFD2223953F5008B9A81 /* AdsUnitID.swift */,
+				FA31BFB422394CAD008B9A81 /* AppDelegate.swift */,
+				FA31BFC822394EBF008B9A81 /* Controllers */,
+				FA31BFBD22394CAF008B9A81 /* LaunchScreen.storyboard */,
+				D7FE6C3624E572D800B37E1D /* Resources */,
+				D7FE6C2F24E5727000B37E1D /* Utils */,
 			);
 			path = HashGenerator;
 			sourceTree = "<group>";
 		};
-		FA31BFC822394EBF008B9A81 /* Controller */ = {
+		FA31BFC822394EBF008B9A81 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FACD59B42245EDC000200471 /* Hash */,
-				FACD59AF2245DCE300200471 /* Base */,
+				D7FE6C3424E572BC00B37E1D /* Main */,
+				FACD59B42245EDC000200471 /* BasicHash */,
 				FACD59B52245EDC800200471 /* HMAC */,
 				FACD59B62245EDDA00200471 /* Comparision */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		FA31BFC922394F4A008B9A81 /* Model */ = {
+		FACD59B42245EDC000200471 /* BasicHash */ = {
 			isa = PBXGroup;
 			children = (
-				FA31BFCA22394F60008B9A81 /* BaseModel.swift */,
+				D7FE6C2A24E564C000B37E1D /* Cell */,
+				FA31BFB622394CAD008B9A81 /* BasicHashViewController.swift */,
+				D7FE6C2624E55FAC00B37E1D /* BasicHashViewController.xib */,
+				D7FE6C2824E561F800B37E1D /* BasicHashViewModel.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FACD59AF2245DCE300200471 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				FA31BFD42239573A008B9A81 /* BaseViewController.swift */,
-				FA31BFCC22395033008B9A81 /* BaseCell.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		FACD59B42245EDC000200471 /* Hash */ = {
-			isa = PBXGroup;
-			children = (
-				FA31BFB622394CAD008B9A81 /* HashViewController.swift */,
-			);
-			path = Hash;
+			path = BasicHash;
 			sourceTree = "<group>";
 		};
 		FACD59B52245EDC800200471 /* HMAC */ = {
@@ -188,23 +220,6 @@
 			productReference = FA31BFB122394CAD008B9A81 /* HashGenerator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FA9BA8E423AE60B600582E12 /* HashGeneratorFree */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA9BA8F623AE60BA00582E12 /* Build configuration list for PBXNativeTarget "HashGeneratorFree" */;
-			buildPhases = (
-				FA9BA8E123AE60B600582E12 /* Sources */,
-				FA9BA8E223AE60B600582E12 /* Frameworks */,
-				FA9BA8E323AE60B600582E12 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HashGeneratorFree;
-			productName = HashGeneratorFree;
-			productReference = FA9BA8E523AE60B600582E12 /* HashGeneratorFree.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,9 +232,6 @@
 				TargetAttributes = {
 					FA31BFB022394CAD008B9A81 = {
 						CreatedOnToolsVersion = 10.1;
-					};
-					FA9BA8E423AE60B600582E12 = {
-						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
@@ -237,7 +249,6 @@
 			projectRoot = "";
 			targets = (
 				FA31BFB022394CAD008B9A81 /* HashGenerator */,
-				FA9BA8E423AE60B600582E12 /* HashGeneratorFree */,
 			);
 		};
 /* End PBXProject section */
@@ -247,17 +258,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7FE6C3C24E572F200B37E1D /* Roboto-Medium.ttf in Resources */,
+				D7FE6C3E24E572F200B37E1D /* Roboto-Regular.ttf in Resources */,
+				D7FE6C2C24E564D400B37E1D /* HashOutputCell.xib in Resources */,
+				D7FE6C3D24E572F200B37E1D /* Roboto-Light.ttf in Resources */,
+				D7FE6C2724E55FAC00B37E1D /* BasicHashViewController.xib in Resources */,
 				FA31BFBF22394CAF008B9A81 /* LaunchScreen.storyboard in Resources */,
+				D7FE6C3F24E572F200B37E1D /* Roboto-Bold.ttf in Resources */,
 				FA31BFBC22394CAF008B9A81 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA9BA8E323AE60B600582E12 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA27049023B744A0006BAD53 /* Assets.xcassets in Resources */,
-				FA9BA90523AE611800582E12 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,35 +276,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA31BFB722394CAD008B9A81 /* HashViewController.swift in Sources */,
-				FA31BFD12239524E008B9A81 /* Helper.swift in Sources */,
-				FA31BFCF223951AB008B9A81 /* Extensions.swift in Sources */,
+				D7FE6C3324E5728800B37E1D /* UIView+Ext.swift in Sources */,
+				FA31BFB722394CAD008B9A81 /* BasicHashViewController.swift in Sources */,
 				FA31BFB522394CAD008B9A81 /* AppDelegate.swift in Sources */,
 				FA31BFC722394CEC008B9A81 /* MainTabBarController.swift in Sources */,
-				FACD59B32245ED2E00200471 /* ComparisonViewController.swift in Sources */,
-				FA31BFD52239573A008B9A81 /* BaseViewController.swift in Sources */,
-				FA31BFCD22395033008B9A81 /* BaseCell.swift in Sources */,
-				FA31BFCB22394F60008B9A81 /* BaseModel.swift in Sources */,
-				FA31BFD3223953F5008B9A81 /* Constants.swift in Sources */,
-				FACD59B12245E90800200471 /* HMACViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA9BA8E123AE60B600582E12 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA9BA8FA23AE610200582E12 /* BaseModel.swift in Sources */,
-				FA9BA8FC23AE610500582E12 /* BaseViewController.swift in Sources */,
-				FA9BA90323AE610E00582E12 /* MainTabBarController.swift in Sources */,
-				FA9BA8FF23AE610A00582E12 /* ComparisonViewController.swift in Sources */,
-				FA9BA90023AE610E00582E12 /* Extensions.swift in Sources */,
-				FA9BA8F923AE60FE00582E12 /* AppDelegate.swift in Sources */,
-				FA9BA8FE23AE610900582E12 /* HMACViewController.swift in Sources */,
-				FA9BA8FD23AE610700582E12 /* BaseCell.swift in Sources */,
-				FA9BA90223AE610E00582E12 /* Helper.swift in Sources */,
-				FA9BA8FB23AE610400582E12 /* HashViewController.swift in Sources */,
-				FA9BA90123AE610E00582E12 /* Constants.swift in Sources */,
+				D7FE6C4124E5731800B37E1D /* UIFont+Ext.swift in Sources */,
+				D7FE6C2E24E5680500B37E1D /* HashOutputCell.swift in Sources */,
+				D7FE6C4324E5744700B37E1D /* UIColor+Ext.swift in Sources */,
+				D7FE6C2924E561F800B37E1D /* BasicHashViewModel.swift in Sources */,
+				FA31BFD3223953F5008B9A81 /* AdsUnitID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,44 +456,6 @@
 			};
 			name = Release;
 		};
-		FA9BA8F723AE60BA00582E12 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconFree;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B8SW848K42;
-				INFOPLIST_FILE = "$(SRCROOT)/HashGenerator/InfoFree.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DaiTranDev.HashGeneratorFree;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FA9BA8F823AE60BA00582E12 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconFree;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B8SW848K42;
-				INFOPLIST_FILE = "$(SRCROOT)/HashGenerator/InfoFree.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DaiTranDev.HashGeneratorFree;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,15 +473,6 @@
 			buildConfigurations = (
 				FA31BFC422394CAF008B9A81 /* Debug */,
 				FA31BFC522394CAF008B9A81 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA9BA8F623AE60BA00582E12 /* Build configuration list for PBXNativeTarget "HashGeneratorFree" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA9BA8F723AE60BA00582E12 /* Debug */,
-				FA9BA8F823AE60BA00582E12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
