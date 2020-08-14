@@ -28,6 +28,9 @@
 		F859D35424E68EB700562FD1 /* HMACViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D35324E68EB700562FD1 /* HMACViewModel.swift */; };
 		F859D35724E6924D00562FD1 /* CellLayoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D35624E6924D00562FD1 /* CellLayoutItem.swift */; };
 		F859D35A24E6936700562FD1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D35924E6936700562FD1 /* BaseViewController.swift */; };
+		F859D35C24E6952400562FD1 /* ComparisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D35B24E6952400562FD1 /* ComparisionViewController.swift */; };
+		F859D35E24E695A400562FD1 /* ComparisionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F859D35D24E695A400562FD1 /* ComparisionViewController.xib */; };
+		F859D36024E696A700562FD1 /* ComparisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D35F24E696A700562FD1 /* ComparisionViewModel.swift */; };
 		FA31BFB522394CAD008B9A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFB422394CAD008B9A81 /* AppDelegate.swift */; };
 		FA31BFB722394CAD008B9A81 /* BasicHashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFB622394CAD008B9A81 /* BasicHashViewController.swift */; };
 		FA31BFBC22394CAF008B9A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA31BFBB22394CAF008B9A81 /* Assets.xcassets */; };
@@ -57,6 +60,9 @@
 		F859D35324E68EB700562FD1 /* HMACViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACViewModel.swift; sourceTree = "<group>"; };
 		F859D35624E6924D00562FD1 /* CellLayoutItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellLayoutItem.swift; sourceTree = "<group>"; };
 		F859D35924E6936700562FD1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F859D35B24E6952400562FD1 /* ComparisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisionViewController.swift; sourceTree = "<group>"; };
+		F859D35D24E695A400562FD1 /* ComparisionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComparisionViewController.xib; sourceTree = "<group>"; };
+		F859D35F24E696A700562FD1 /* ComparisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisionViewModel.swift; sourceTree = "<group>"; };
 		FA31BFB122394CAD008B9A81 /* HashGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA31BFB422394CAD008B9A81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA31BFB622394CAD008B9A81 /* BasicHashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicHashViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +72,6 @@
 		FA31BFC622394CEC008B9A81 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FA31BFD2223953F5008B9A81 /* AdsUnitID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsUnitID.swift; sourceTree = "<group>"; };
 		FACD59B02245E90800200471 /* HMACViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACViewController.swift; sourceTree = "<group>"; };
-		FACD59B22245ED2E00200471 /* ComparisonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,7 +237,9 @@
 		FACD59B62245EDDA00200471 /* Comparision */ = {
 			isa = PBXGroup;
 			children = (
-				FACD59B22245ED2E00200471 /* ComparisonViewController.swift */,
+				F859D35B24E6952400562FD1 /* ComparisionViewController.swift */,
+				F859D35D24E695A400562FD1 /* ComparisionViewController.xib */,
+				F859D35F24E696A700562FD1 /* ComparisionViewModel.swift */,
 			);
 			path = Comparision;
 			sourceTree = "<group>";
@@ -311,6 +318,7 @@
 				FA31BFBF22394CAF008B9A81 /* LaunchScreen.storyboard in Resources */,
 				D7FE6C3F24E572F200B37E1D /* Roboto-Bold.ttf in Resources */,
 				FA31BFBC22394CAF008B9A81 /* Assets.xcassets in Resources */,
+				F859D35E24E695A400562FD1 /* ComparisionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +338,7 @@
 				FA31BFB522394CAD008B9A81 /* AppDelegate.swift in Sources */,
 				FA31BFC722394CEC008B9A81 /* MainTabBarController.swift in Sources */,
 				D7FE6C4124E5731800B37E1D /* UIFont+Ext.swift in Sources */,
+				F859D36024E696A700562FD1 /* ComparisionViewModel.swift in Sources */,
 				D7FE6C2E24E5680500B37E1D /* HashOutputCell.swift in Sources */,
 				D7FE6C4524E5793B00B37E1D /* HashUtitlies.swift in Sources */,
 				F859D35224E68E4300562FD1 /* HMACViewController.swift in Sources */,
@@ -338,6 +347,7 @@
 				FA31BFD3223953F5008B9A81 /* AdsUnitID.swift in Sources */,
 				F859D34E24E6851600562FD1 /* HUDPresentable.swift in Sources */,
 				F859D35724E6924D00562FD1 /* CellLayoutItem.swift in Sources */,
+				F859D35C24E6952400562FD1 /* ComparisionViewController.swift in Sources */,
 				F859D34F24E6851600562FD1 /* MessageDialogPresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
