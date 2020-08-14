@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class HMACViewController: BaseViewController {
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var inputKeyTextField: UITextField!
     @IBOutlet weak var outputTableView: UITableView!
     @IBOutlet weak var outputTableViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var stackView: UIStackView!
     
     private var contentSizeObserver: NSKeyValueObservation?
     private let cellId = "cellId"
@@ -34,7 +36,10 @@ class HMACViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bannerView = createAndLoadBannerView()
+        
         viewModel.delegate = self
+        
         [inputTextField, inputKeyTextField].forEach {
             $0.addTarget(self, action: #selector(textFieldEditingChanged), for: .editingChanged)
         }
@@ -62,6 +67,12 @@ class HMACViewController: BaseViewController {
         } else {
             viewModel.inputKey = inputKeyTextField.text
         }
+    }
+    
+    override func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        super.adViewDidReceiveAd(bannerView)
+        
+        stackView.insertArrangedSubview(bannerView, at: 0)
     }
 }
 

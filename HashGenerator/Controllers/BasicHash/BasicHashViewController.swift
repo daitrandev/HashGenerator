@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class BasicHashViewController: BaseViewController {
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var outputTableView: UITableView!
     @IBOutlet weak var outputTableViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var stackView: UIStackView!
     
     private var contentSizeObserver: NSKeyValueObservation?
     private let cellId = "cellId"
@@ -32,6 +34,9 @@ class BasicHashViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bannerView = createAndLoadBannerView()
+        interstitial = createAndLoadInterstitial()
         
         viewModel.delegate = self
         
@@ -60,6 +65,12 @@ class BasicHashViewController: BaseViewController {
     @objc override func didTapRefresh() {
         inputTextField.text = nil
         viewModel.inputText = nil
+    }
+    
+    override func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        super.adViewDidReceiveAd(bannerView)
+        
+        stackView.insertArrangedSubview(bannerView, at: 0)
     }
 }
 

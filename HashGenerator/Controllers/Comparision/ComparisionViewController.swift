@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ComparisionViewController: BaseViewController {
     @IBOutlet weak var firstInputTextField: UITextField!
     @IBOutlet weak var secondInputTextField: UITextField!
     @IBOutlet weak var outputLabel: UILabel!
+    @IBOutlet weak var stackView: UIStackView!
     
     private var viewModel: ComparisionViewModelType
     
@@ -30,7 +32,10 @@ class ComparisionViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bannerView = createAndLoadBannerView()
+        
         viewModel.delegate = self
+        
         [firstInputTextField, secondInputTextField].forEach {
             $0.addTarget(self, action: #selector(textFieldEditingChanged), for: .editingChanged)
         }
@@ -55,6 +60,12 @@ class ComparisionViewController: BaseViewController {
         
         secondInputTextField.text = nil
         viewModel.secondInputText = nil
+    }
+    
+    override func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        super.adViewDidReceiveAd(bannerView)
+        
+        stackView.insertArrangedSubview(bannerView, at: 0)
     }
 }
 

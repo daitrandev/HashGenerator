@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 import IQKeyboardManager
 
 @UIApplicationMain
@@ -19,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIFont.loadCustomFonts()
         
         IQKeyboardManager.shared().isEnabled = true
+        
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         window = UIWindow()
         window?.makeKeyAndVisible()

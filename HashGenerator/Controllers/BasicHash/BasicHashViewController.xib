@@ -21,6 +21,7 @@
                 <outlet property="inputTextField" destination="EaH-xW-O1d" id="fYS-1E-YIL"/>
                 <outlet property="outputTableView" destination="d1V-82-7qp" id="rKv-sy-C73"/>
                 <outlet property="outputTableViewHeightConstraint" destination="ikp-wL-SOK" id="MUz-yu-eSe"/>
+                <outlet property="stackView" destination="Eql-k4-nla" id="asq-pU-Tuy"/>
                 <outlet property="view" destination="Ccw-f4-bwU" id="T3c-Ug-eq9"/>
             </connections>
         </placeholder>

@@ -21,6 +21,7 @@
                 <outlet property="firstInputTextField" destination="rJc-JK-AgC" id="RGu-fH-oWw"/>
                 <outlet property="outputLabel" destination="6Ga-yr-zEl" id="1NJ-Ye-W84"/>
                 <outlet property="secondInputTextField" destination="Wg4-kk-DWU" id="ATO-aO-AF1"/>
+                <outlet property="stackView" destination="deR-8L-L4n" id="0jR-Vt-F2v"/>
                 <outlet property="view" destination="wmH-Xd-VgF" id="oIE-5h-9LX"/>
             </connections>
         </placeholder>
