@@ -6,7 +6,7 @@
 //  Copyright © 2020 DaiTran. All rights reserved.
 //
 
-protocol BasicHashViewModelDelegate: class {
+protocol BasicHashViewModelDelegate: class, MessageDialogPresentable, HUDPresentable {
     func reloadOutputTableView()
 }
 
@@ -58,7 +58,11 @@ class BasicHashViewModel: BasicHashViewModelType {
         ]
     }
     
-    func clear() {
-        
+    private func clear() {
+        var cellLayoutItems = self.cellLayoutItems
+        for index in 0..<cellLayoutItems.count {
+            cellLayoutItems[index].content = nil
+        }
+        self.cellLayoutItems = cellLayoutItems
     }
 }

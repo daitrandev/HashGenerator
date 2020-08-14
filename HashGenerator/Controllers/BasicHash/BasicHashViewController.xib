@@ -51,7 +51,7 @@
                                                 <constraint firstAttribute="height" constant="0.5" id="Z8o-G3-y8X"/>
                                             </constraints>
                                         </view>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EaH-xW-O1d">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TEXT" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EaH-xW-O1d">
                                             <rect key="frame" x="10" y="99.5" width="374" height="44"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -104,7 +104,7 @@
                                             </constraints>
                                         </view>
                                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d1V-82-7qp">
-                                            <rect key="frame" x="10" y="74" width="374" height="82"/>
+                                            <rect key="frame" x="0.0" y="74" width="394" height="82"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="82" id="ikp-wL-SOK"/>
@@ -115,12 +115,12 @@
                                     <constraints>
                                         <constraint firstItem="6JX-Yb-XKy" firstAttribute="leading" secondItem="YQR-xq-GLI" secondAttribute="leading" constant="16" id="9Os-G9-kaq"/>
                                         <constraint firstItem="W7c-61-tqw" firstAttribute="top" secondItem="6JX-Yb-XKy" secondAttribute="bottom" constant="8" id="L2k-D5-WIf"/>
-                                        <constraint firstItem="d1V-82-7qp" firstAttribute="leading" secondItem="YQR-xq-GLI" secondAttribute="leading" constant="10" id="S1f-Ys-vg4"/>
+                                        <constraint firstItem="d1V-82-7qp" firstAttribute="leading" secondItem="YQR-xq-GLI" secondAttribute="leading" id="S1f-Ys-vg4"/>
                                         <constraint firstItem="d1V-82-7qp" firstAttribute="top" secondItem="W7c-61-tqw" secondAttribute="bottom" constant="20" id="U5m-CD-yGe"/>
                                         <constraint firstItem="6JX-Yb-XKy" firstAttribute="top" secondItem="YQR-xq-GLI" secondAttribute="top" constant="8" id="VhV-o6-5xb"/>
                                         <constraint firstAttribute="bottom" secondItem="d1V-82-7qp" secondAttribute="bottom" constant="8" id="XpC-ve-ZwD"/>
                                         <constraint firstItem="W7c-61-tqw" firstAttribute="leading" secondItem="YQR-xq-GLI" secondAttribute="leading" constant="16" id="hsE-DX-a0N"/>
-                                        <constraint firstAttribute="trailing" secondItem="d1V-82-7qp" secondAttribute="trailing" constant="10" id="leW-eQ-LGQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="d1V-82-7qp" secondAttribute="trailing" id="leW-eQ-LGQ"/>
                                         <constraint firstAttribute="trailing" secondItem="W7c-61-tqw" secondAttribute="trailing" constant="16" id="r0p-q2-bop"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
@@ -137,7 +137,7 @@
                         <constraint firstItem="Eql-k4-nla" firstAttribute="leading" secondItem="aOV-DD-fGO" secondAttribute="leading" constant="10" id="DZB-7y-KGx"/>
                         <constraint firstAttribute="trailing" secondItem="Eql-k4-nla" secondAttribute="trailing" id="V5N-Wt-Z4v"/>
                         <constraint firstItem="Eql-k4-nla" firstAttribute="top" secondItem="aOV-DD-fGO" secondAttribute="top" constant="10" id="jSv-Lp-lYM"/>
-                        <constraint firstAttribute="bottom" secondItem="Eql-k4-nla" secondAttribute="bottom" id="qQN-Mm-N8W"/>
+                        <constraint firstAttribute="bottom" secondItem="Eql-k4-nla" secondAttribute="bottom" constant="10" id="qQN-Mm-N8W"/>
                         <constraint firstItem="Eql-k4-nla" firstAttribute="centerX" secondItem="aOV-DD-fGO" secondAttribute="centerX" id="z7o-8C-i8z"/>
                     </constraints>
                 </scrollView>

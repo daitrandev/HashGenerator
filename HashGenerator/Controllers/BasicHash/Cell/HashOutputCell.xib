@@ -30,8 +30,8 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3d-Re-qrZ">
-                        <rect key="frame" x="88" y="0.0" width="376" height="44"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3d-Re-qrZ" customClass="PaddingTextField" customModule="HashGenerator" customModuleProvider="target">
+                        <rect key="frame" x="88" y="0.0" width="326" height="44"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="44" id="tKr-KQ-6fK"/>
@@ -46,15 +46,23 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWE-l1-i7U">
+                        <rect key="frame" x="414" y="0.0" width="50" height="44"/>
+                        <state key="normal" image="copy"/>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="0Mu-1H-mMC" firstAttribute="top" secondItem="h3d-Re-qrZ" secondAttribute="top" id="2WP-Xb-OvV"/>
                     <constraint firstItem="h3d-Re-qrZ" firstAttribute="leading" secondItem="0Mu-1H-mMC" secondAttribute="trailing" constant="8" id="2sx-JU-br7"/>
-                    <constraint firstAttribute="trailing" secondItem="h3d-Re-qrZ" secondAttribute="trailing" id="BdE-RD-Iru"/>
+                    <constraint firstItem="dWE-l1-i7U" firstAttribute="top" secondItem="h3d-Re-qrZ" secondAttribute="top" id="4aU-aE-C4T"/>
+                    <constraint firstItem="dWE-l1-i7U" firstAttribute="bottom" secondItem="h3d-Re-qrZ" secondAttribute="bottom" id="5r7-P7-XqO"/>
+                    <constraint firstAttribute="trailing" secondItem="h3d-Re-qrZ" secondAttribute="trailing" constant="50" id="BdE-RD-Iru"/>
                     <constraint firstItem="h3d-Re-qrZ" firstAttribute="top" secondItem="x2d-AU-L32" secondAttribute="top" id="OhH-f6-tw4"/>
                     <constraint firstAttribute="bottom" secondItem="h3d-Re-qrZ" secondAttribute="bottom" constant="10" id="PKN-Ab-ynT"/>
+                    <constraint firstItem="dWE-l1-i7U" firstAttribute="leading" secondItem="h3d-Re-qrZ" secondAttribute="trailing" id="Rw8-nf-PPH"/>
                     <constraint firstItem="h3d-Re-qrZ" firstAttribute="centerY" secondItem="x2d-AU-L32" secondAttribute="centerY" id="Yev-SZ-iP2"/>
+                    <constraint firstAttribute="trailing" secondItem="dWE-l1-i7U" secondAttribute="trailing" id="Zs8-X8-ApW"/>
                     <constraint firstItem="0Mu-1H-mMC" firstAttribute="leading" secondItem="x2d-AU-L32" secondAttribute="leading" id="Zud-v1-Cvn"/>
                     <constraint firstItem="0Mu-1H-mMC" firstAttribute="bottom" secondItem="h3d-Re-qrZ" secondAttribute="bottom" id="tqT-Tu-z8L"/>
                 </constraints>
@@ -62,9 +70,13 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="contentTextField" destination="h3d-Re-qrZ" id="Qk6-9z-OWQ"/>
+                <outlet property="copyButton" destination="dWE-l1-i7U" id="CNP-Ys-BoD"/>
                 <outlet property="nameLabel" destination="0Mu-1H-mMC" id="Tof-4k-VGe"/>
             </connections>
             <point key="canvasLocation" x="168.11594202898553" y="163.39285714285714"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="copy" width="16" height="16"/>
+    </resources>
 </document>

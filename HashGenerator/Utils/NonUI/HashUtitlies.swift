@@ -39,6 +39,6 @@ enum HashAlgorithm: String {
                 hashAlgorithm(messageBytes, CC_LONG(inputData.count), digestBytes)
             }
         }
-        return String(data: hashData, encoding: .utf8)
+        return hashData.map { String(format: "%02hhx", $0) }.joined()
     }
 }

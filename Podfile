@@ -8,5 +8,6 @@ target 'HashGenerator' do
   # Pods for HashGenerator
   pod 'Google-Mobile-Ads-SDK'
   pod 'IQKeyboardManager'
+  pod 'MBProgressHUD'
 end
 

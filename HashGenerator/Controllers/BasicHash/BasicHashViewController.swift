@@ -70,7 +70,8 @@ class BasicHashViewController: UIViewController {
     }
     
     @objc private func didTapRefresh() {
-        
+        inputTextField.text = nil
+        viewModel.inputText = nil
     }
 }
 
@@ -97,6 +98,19 @@ extension BasicHashViewController: UITableViewDataSource {
                 for: indexPath
             ) as? HashOutputCell else { return UITableViewCell() }
         cell.configure(with: viewModel.cellLayoutItems[indexPath.row])
+        cell.delegate = self
         return cell
+    }
+}
+
+extension BasicHashViewController: HashOutputCellDelegate {
+    func didTapCopy(string: String) {
+        UIPasteboard.general.string = string
+        showMessageDialog(
+            title: "Success",
+            message: "Copied",
+            actionName: "Close",
+            action: nil
+        )
     }
 }
