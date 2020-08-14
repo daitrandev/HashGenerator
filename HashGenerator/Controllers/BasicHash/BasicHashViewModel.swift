@@ -10,13 +10,13 @@ protocol BasicHashViewModelDelegate: class, MessageDialogPresentable, HUDPresent
     func reloadOutputTableView()
 }
 
-protocol BasicHashViewModelType: class {
+protocol BasicHashViewModelType: BaseViewModelType {
     var inputText: String? { get set }
     var cellLayoutItems: [CellLayoutItem] { get }
     var delegate: BasicHashViewModelDelegate? { get set }
 }
 
-class BasicHashViewModel: BasicHashViewModelType {
+class BasicHashViewModel: BaseViewModel, BasicHashViewModelType {
     var inputText: String? {
         didSet {
             guard let inputText = inputText, !inputText.isEmpty else {
@@ -40,7 +40,7 @@ class BasicHashViewModel: BasicHashViewModelType {
     
     weak var delegate: BasicHashViewModelDelegate?
     
-    init() {
+    override init() {
         cellLayoutItems = [
             .init(algorithm: .MD2),
             .init(algorithm: .MD4),

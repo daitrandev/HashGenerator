@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,17 @@
 		F859D35C24E6952400562FD1 /* ComparisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D35B24E6952400562FD1 /* ComparisionViewController.swift */; };
 		F859D35E24E695A400562FD1 /* ComparisionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F859D35D24E695A400562FD1 /* ComparisionViewController.xib */; };
 		F859D36024E696A700562FD1 /* ComparisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D35F24E696A700562FD1 /* ComparisionViewModel.swift */; };
+		F859D36524E69EE900562FD1 /* PurchasingPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D36224E69EE900562FD1 /* PurchasingPopupViewController.swift */; };
+		F859D36624E69EE900562FD1 /* PurchasingPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F859D36324E69EE900562FD1 /* PurchasingPopupViewController.xib */; };
+		F859D36724E69EE900562FD1 /* PurchasingPopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D36424E69EE900562FD1 /* PurchasingPopupViewModel.swift */; };
+		F859D36924E69F0D00562FD1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D36824E69F0D00562FD1 /* BaseViewModel.swift */; };
+		F859D36B24E69F7500562FD1 /* GlobalKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D36A24E69F7500562FD1 /* GlobalKeychain.swift */; };
+		F859D36E24E69FCD00562FD1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F859D36D24E69FCD00562FD1 /* SwiftPackageProductDependency */; };
+		F859D37124E69FE500562FD1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F859D37024E69FE500562FD1 /* SwiftPackageProductDependency */; };
+		F859D37324E6A02A00562FD1 /* KeychainKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D37224E6A02A00562FD1 /* KeychainKey.swift */; };
+		F859D37524E6A07B00562FD1 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D37424E6A07B00562FD1 /* LoadingButton.swift */; };
+		F859D37724E6A0C900562FD1 /* UITraitCollection+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D37624E6A0C900562FD1 /* UITraitCollection+Utils.swift */; };
+		F859D37924E6A98E00562FD1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F859D37824E6A98E00562FD1 /* StoreKit.framework */; };
 		FA31BFB522394CAD008B9A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFB422394CAD008B9A81 /* AppDelegate.swift */; };
 		FA31BFB722394CAD008B9A81 /* BasicHashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFB622394CAD008B9A81 /* BasicHashViewController.swift */; };
 		FA31BFBC22394CAF008B9A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA31BFBB22394CAF008B9A81 /* Assets.xcassets */; };
@@ -63,6 +74,15 @@
 		F859D35B24E6952400562FD1 /* ComparisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisionViewController.swift; sourceTree = "<group>"; };
 		F859D35D24E695A400562FD1 /* ComparisionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComparisionViewController.xib; sourceTree = "<group>"; };
 		F859D35F24E696A700562FD1 /* ComparisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisionViewModel.swift; sourceTree = "<group>"; };
+		F859D36224E69EE900562FD1 /* PurchasingPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasingPopupViewController.swift; sourceTree = "<group>"; };
+		F859D36324E69EE900562FD1 /* PurchasingPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchasingPopupViewController.xib; sourceTree = "<group>"; };
+		F859D36424E69EE900562FD1 /* PurchasingPopupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasingPopupViewModel.swift; sourceTree = "<group>"; };
+		F859D36824E69F0D00562FD1 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F859D36A24E69F7500562FD1 /* GlobalKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalKeychain.swift; sourceTree = "<group>"; };
+		F859D37224E6A02A00562FD1 /* KeychainKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainKey.swift; sourceTree = "<group>"; };
+		F859D37424E6A07B00562FD1 /* LoadingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		F859D37624E6A0C900562FD1 /* UITraitCollection+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITraitCollection+Utils.swift"; sourceTree = "<group>"; };
+		F859D37824E6A98E00562FD1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FA31BFB122394CAD008B9A81 /* HashGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA31BFB422394CAD008B9A81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA31BFB622394CAD008B9A81 /* BasicHashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicHashViewController.swift; sourceTree = "<group>"; };
@@ -79,12 +99,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F859D37124E69FE500562FD1 /* BuildFile in Frameworks */,
+				F859D36E24E69FCD00562FD1 /* BuildFile in Frameworks */,
+				F859D37924E6A98E00562FD1 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21BEE18BC7A58928C941B46C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F859D37824E6A98E00562FD1 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D7FE6C2A24E564C000B37E1D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +137,8 @@
 		D7FE6C3024E5727700B37E1D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F859D37624E6A0C900562FD1 /* UITraitCollection+Utils.swift */,
+				F859D37424E6A07B00562FD1 /* LoadingButton.swift */,
 				F859D34C24E6851600562FD1 /* HUDPresentable.swift */,
 				F859D34D24E6851600562FD1 /* MessageDialogPresentable.swift */,
 				D7FE6C3224E5728800B37E1D /* UIView+Ext.swift */,
@@ -120,6 +153,7 @@
 		D7FE6C3124E5727A00B37E1D /* NonUI */ = {
 			isa = PBXGroup;
 			children = (
+				F859D36A24E69F7500562FD1 /* GlobalKeychain.swift */,
 				D7FE6C4424E5793B00B37E1D /* HashUtitlies.swift */,
 			);
 			path = NonUI;
@@ -157,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				F859D35624E6924D00562FD1 /* CellLayoutItem.swift */,
+				F859D37224E6A02A00562FD1 /* KeychainKey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,8 +200,19 @@
 			isa = PBXGroup;
 			children = (
 				F859D35924E6936700562FD1 /* BaseViewController.swift */,
+				F859D36824E69F0D00562FD1 /* BaseViewModel.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		F859D36124E69EE900562FD1 /* PurchasingPopup */ = {
+			isa = PBXGroup;
+			children = (
+				F859D36224E69EE900562FD1 /* PurchasingPopupViewController.swift */,
+				F859D36324E69EE900562FD1 /* PurchasingPopupViewController.xib */,
+				F859D36424E69EE900562FD1 /* PurchasingPopupViewModel.swift */,
+			);
+			path = PurchasingPopup;
 			sourceTree = "<group>";
 		};
 		FA31BFA822394CAD008B9A81 = {
@@ -175,6 +221,7 @@
 				FA31BFB322394CAD008B9A81 /* HashGenerator */,
 				FA31BFB222394CAD008B9A81 /* Products */,
 				FF1C4C4D99AF93E4B16738C9 /* Pods */,
+				21BEE18BC7A58928C941B46C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,6 +251,7 @@
 		FA31BFC822394EBF008B9A81 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F859D36124E69EE900562FD1 /* PurchasingPopup */,
 				F859D35824E6935800562FD1 /* Base */,
 				D7FE6C3424E572BC00B37E1D /* Main */,
 				FACD59B42245EDC000200471 /* BasicHash */,
@@ -267,6 +315,10 @@
 			dependencies = (
 			);
 			name = HashGenerator;
+			packageProductDependencies = (
+				F859D36D24E69FCD00562FD1 /* SwiftPackageProductDependency */,
+				F859D37024E69FE500562FD1 /* SwiftPackageProductDependency */,
+			);
 			productName = HashGenerator;
 			productReference = FA31BFB122394CAD008B9A81 /* HashGenerator.app */;
 			productType = "com.apple.product-type.application";
@@ -295,6 +347,10 @@
 				Base,
 			);
 			mainGroup = FA31BFA822394CAD008B9A81;
+			packageReferences = (
+				F859D36C24E69FCD00562FD1 /* RemoteSwiftPackageReference */,
+				F859D36F24E69FE500562FD1 /* RemoteSwiftPackageReference */,
+			);
 			productRefGroup = FA31BFB222394CAD008B9A81 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -309,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F859D36624E69EE900562FD1 /* PurchasingPopupViewController.xib in Resources */,
 				D7FE6C3C24E572F200B37E1D /* Roboto-Medium.ttf in Resources */,
 				F859D35124E68D5A00562FD1 /* HMACViewController.xib in Resources */,
 				D7FE6C3E24E572F200B37E1D /* Roboto-Regular.ttf in Resources */,
@@ -329,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F859D37524E6A07B00562FD1 /* LoadingButton.swift in Sources */,
 				F859D34924E67E2A00562FD1 /* UIImageView+Ext.swift in Sources */,
 				F859D34B24E6838700562FD1 /* PaddingTextField.swift in Sources */,
 				D7FE6C3324E5728800B37E1D /* UIView+Ext.swift in Sources */,
@@ -336,11 +394,15 @@
 				FA31BFB722394CAD008B9A81 /* BasicHashViewController.swift in Sources */,
 				F859D35A24E6936700562FD1 /* BaseViewController.swift in Sources */,
 				FA31BFB522394CAD008B9A81 /* AppDelegate.swift in Sources */,
+				F859D36524E69EE900562FD1 /* PurchasingPopupViewController.swift in Sources */,
 				FA31BFC722394CEC008B9A81 /* MainTabBarController.swift in Sources */,
 				D7FE6C4124E5731800B37E1D /* UIFont+Ext.swift in Sources */,
 				F859D36024E696A700562FD1 /* ComparisionViewModel.swift in Sources */,
+				F859D36724E69EE900562FD1 /* PurchasingPopupViewModel.swift in Sources */,
+				F859D36B24E69F7500562FD1 /* GlobalKeychain.swift in Sources */,
 				D7FE6C2E24E5680500B37E1D /* HashOutputCell.swift in Sources */,
 				D7FE6C4524E5793B00B37E1D /* HashUtitlies.swift in Sources */,
+				F859D36924E69F0D00562FD1 /* BaseViewModel.swift in Sources */,
 				F859D35224E68E4300562FD1 /* HMACViewController.swift in Sources */,
 				D7FE6C4324E5744700B37E1D /* UIColor+Ext.swift in Sources */,
 				D7FE6C2924E561F800B37E1D /* BasicHashViewModel.swift in Sources */,
@@ -348,6 +410,8 @@
 				F859D34E24E6851600562FD1 /* HUDPresentable.swift in Sources */,
 				F859D35724E6924D00562FD1 /* CellLayoutItem.swift in Sources */,
 				F859D35C24E6952400562FD1 /* ComparisionViewController.swift in Sources */,
+				F859D37324E6A02A00562FD1 /* KeychainKey.swift in Sources */,
+				F859D37724E6A0C900562FD1 /* UITraitCollection+Utils.swift in Sources */,
 				F859D34F24E6851600562FD1 /* MessageDialogPresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,7 +558,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DaiTranDev.HashGenerator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DaiTranDev.HashGeneratorFree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -513,7 +577,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DaiTranDev.HashGenerator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DaiTranDev.HashGeneratorFree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -542,6 +606,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F859D36C24E69FCD00562FD1 /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
+		F859D36F24E69FE500562FD1 /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bizz84/SwiftyStoreKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.16.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F859D36D24E69FCD00562FD1 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F859D36C24E69FCD00562FD1 /* RemoteSwiftPackageReference */;
+			productName = KeychainSwift;
+		};
+		F859D37024E69FE500562FD1 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F859D36F24E69FE500562FD1 /* RemoteSwiftPackageReference */;
+			productName = SwiftyStoreKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA31BFA922394CAD008B9A81 /* Project object */;
 }

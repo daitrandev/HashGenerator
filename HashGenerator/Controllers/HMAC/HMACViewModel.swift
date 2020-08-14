@@ -8,14 +8,14 @@
 
 protocol HMACViewModelDelegate: BasicHashViewModelDelegate { }
 
-protocol HMACViewModelType: class {
+protocol HMACViewModelType: BaseViewModelType {
     var inputText: String? { get set }
     var inputKey: String? { get set }
     var cellLayoutItems: [CellLayoutItem] { get }
     var delegate: HMACViewModelDelegate? { get set }
 }
 
-class HMACViewModel: HMACViewModelType {
+class HMACViewModel: BaseViewModel, HMACViewModelType {
     var inputText: String? {
         didSet {
             calculateHMAC()
@@ -36,7 +36,7 @@ class HMACViewModel: HMACViewModelType {
     
     weak var delegate: HMACViewModelDelegate?
     
-    init() {
+    override init() {
         cellLayoutItems = [
             .init(algorithm: .MD5),
             .init(algorithm: .SHA1),

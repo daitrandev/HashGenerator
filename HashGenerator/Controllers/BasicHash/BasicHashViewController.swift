@@ -35,11 +35,20 @@ class BasicHashViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bannerView = createAndLoadBannerView()
-        interstitial = createAndLoadInterstitial()
+        if !viewModel.isPurchased {
+            bannerView = createAndLoadBannerView()
+            interstitial = createAndLoadInterstitial()
+        }
         
         viewModel.delegate = self
         
+        inputTextField.attributedPlaceholder = NSAttributedString(
+            string: "INPUT TEXT",
+            attributes: [
+                NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 14) as Any,
+                NSAttributedString.Key.foregroundColor: UIColor.gray
+            ]
+        )
         inputTextField.addTarget(self, action: #selector(inputTextEditingChanged), for: .editingChanged)
         
         outputTableView.register(

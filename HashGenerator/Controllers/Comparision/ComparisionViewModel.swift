@@ -10,13 +10,13 @@ protocol ComparisionViewModelDelegate: class, MessageDialogPresentable {
     func renderOutput(isSame: Bool)
 }
 
-protocol ComparisionViewModelType: class {
+protocol ComparisionViewModelType: BaseViewModelType {
     var firstInputText: String? { get set }
     var secondInputText: String? { get set }
     var delegate: ComparisionViewModelDelegate? { get set }
 }
 
-class ComparisionViewModel: ComparisionViewModelType {
+class ComparisionViewModel: BaseViewModel, ComparisionViewModelType {
     var firstInputText: String? {
         didSet {
             delegate?.renderOutput(isSame: firstInputText == secondInputText)

@@ -36,9 +36,33 @@ class HMACViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bannerView = createAndLoadBannerView()
+        if !viewModel.isPurchased {
+            bannerView = createAndLoadBannerView()
+            
+            inputTextField.isEnabled = false
+            inputTextField.backgroundColor = .lightGray
+            
+            inputKeyTextField.isEnabled = false
+            inputKeyTextField.backgroundColor = .lightGray
+        }
         
         viewModel.delegate = self
+        
+        inputTextField.attributedPlaceholder = NSAttributedString(
+            string: "INPUT TEXT",
+            attributes: [
+                NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 14) as Any,
+                NSAttributedString.Key.foregroundColor: UIColor.gray
+            ]
+        )
+        
+        inputKeyTextField.attributedPlaceholder = NSAttributedString(
+            string: "INPUT KEY",
+            attributes: [
+                NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 14) as Any,
+                NSAttributedString.Key.foregroundColor: UIColor.gray
+            ]
+        )
         
         [inputTextField, inputKeyTextField].forEach {
             $0.addTarget(self, action: #selector(textFieldEditingChanged), for: .editingChanged)
@@ -73,6 +97,15 @@ class HMACViewController: BaseViewController {
         super.adViewDidReceiveAd(bannerView)
         
         stackView.insertArrangedSubview(bannerView, at: 0)
+    }
+    
+    override func removeAds() {
+        super.removeAds()
+        inputTextField.isEnabled = true
+        inputTextField.backgroundColor = .white
+        
+        inputKeyTextField.isEnabled = true
+        inputKeyTextField.backgroundColor = .white
     }
 }
 
