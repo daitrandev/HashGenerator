@@ -23,6 +23,11 @@
 		F859D34B24E6838700562FD1 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D34A24E6838700562FD1 /* PaddingTextField.swift */; };
 		F859D34E24E6851600562FD1 /* HUDPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D34C24E6851600562FD1 /* HUDPresentable.swift */; };
 		F859D34F24E6851600562FD1 /* MessageDialogPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D34D24E6851600562FD1 /* MessageDialogPresentable.swift */; };
+		F859D35124E68D5A00562FD1 /* HMACViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F859D35024E68D5A00562FD1 /* HMACViewController.xib */; };
+		F859D35224E68E4300562FD1 /* HMACViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD59B02245E90800200471 /* HMACViewController.swift */; };
+		F859D35424E68EB700562FD1 /* HMACViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D35324E68EB700562FD1 /* HMACViewModel.swift */; };
+		F859D35724E6924D00562FD1 /* CellLayoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D35624E6924D00562FD1 /* CellLayoutItem.swift */; };
+		F859D35A24E6936700562FD1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D35924E6936700562FD1 /* BaseViewController.swift */; };
 		FA31BFB522394CAD008B9A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFB422394CAD008B9A81 /* AppDelegate.swift */; };
 		FA31BFB722394CAD008B9A81 /* BasicHashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31BFB622394CAD008B9A81 /* BasicHashViewController.swift */; };
 		FA31BFBC22394CAF008B9A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA31BFBB22394CAF008B9A81 /* Assets.xcassets */; };
@@ -48,6 +53,10 @@
 		F859D34A24E6838700562FD1 /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		F859D34C24E6851600562FD1 /* HUDPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDPresentable.swift; sourceTree = "<group>"; };
 		F859D34D24E6851600562FD1 /* MessageDialogPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDialogPresentable.swift; sourceTree = "<group>"; };
+		F859D35024E68D5A00562FD1 /* HMACViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMACViewController.xib; sourceTree = "<group>"; };
+		F859D35324E68EB700562FD1 /* HMACViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACViewModel.swift; sourceTree = "<group>"; };
+		F859D35624E6924D00562FD1 /* CellLayoutItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellLayoutItem.swift; sourceTree = "<group>"; };
+		F859D35924E6936700562FD1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FA31BFB122394CAD008B9A81 /* HashGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA31BFB422394CAD008B9A81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA31BFB622394CAD008B9A81 /* BasicHashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicHashViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +148,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		F859D35524E6923F00562FD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F859D35624E6924D00562FD1 /* CellLayoutItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F859D35824E6935800562FD1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F859D35924E6936700562FD1 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		FA31BFA822394CAD008B9A81 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +184,7 @@
 		FA31BFB322394CAD008B9A81 /* HashGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				F859D35524E6923F00562FD1 /* Models */,
 				FA31BFC022394CAF008B9A81 /* Info.plist */,
 				FA31BFD2223953F5008B9A81 /* AdsUnitID.swift */,
 				FA31BFB422394CAD008B9A81 /* AppDelegate.swift */,
@@ -173,6 +199,7 @@
 		FA31BFC822394EBF008B9A81 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F859D35824E6935800562FD1 /* Base */,
 				D7FE6C3424E572BC00B37E1D /* Main */,
 				FACD59B42245EDC000200471 /* BasicHash */,
 				FACD59B52245EDC800200471 /* HMAC */,
@@ -196,6 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				FACD59B02245E90800200471 /* HMACViewController.swift */,
+				F859D35024E68D5A00562FD1 /* HMACViewController.xib */,
+				F859D35324E68EB700562FD1 /* HMACViewModel.swift */,
 			);
 			path = HMAC;
 			sourceTree = "<group>";
@@ -274,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7FE6C3C24E572F200B37E1D /* Roboto-Medium.ttf in Resources */,
+				F859D35124E68D5A00562FD1 /* HMACViewController.xib in Resources */,
 				D7FE6C3E24E572F200B37E1D /* Roboto-Regular.ttf in Resources */,
 				D7FE6C2C24E564D400B37E1D /* HashOutputCell.xib in Resources */,
 				D7FE6C3D24E572F200B37E1D /* Roboto-Light.ttf in Resources */,
@@ -294,16 +324,20 @@
 				F859D34924E67E2A00562FD1 /* UIImageView+Ext.swift in Sources */,
 				F859D34B24E6838700562FD1 /* PaddingTextField.swift in Sources */,
 				D7FE6C3324E5728800B37E1D /* UIView+Ext.swift in Sources */,
+				F859D35424E68EB700562FD1 /* HMACViewModel.swift in Sources */,
 				FA31BFB722394CAD008B9A81 /* BasicHashViewController.swift in Sources */,
+				F859D35A24E6936700562FD1 /* BaseViewController.swift in Sources */,
 				FA31BFB522394CAD008B9A81 /* AppDelegate.swift in Sources */,
 				FA31BFC722394CEC008B9A81 /* MainTabBarController.swift in Sources */,
 				D7FE6C4124E5731800B37E1D /* UIFont+Ext.swift in Sources */,
 				D7FE6C2E24E5680500B37E1D /* HashOutputCell.swift in Sources */,
 				D7FE6C4524E5793B00B37E1D /* HashUtitlies.swift in Sources */,
+				F859D35224E68E4300562FD1 /* HMACViewController.swift in Sources */,
 				D7FE6C4324E5744700B37E1D /* UIColor+Ext.swift in Sources */,
 				D7FE6C2924E561F800B37E1D /* BasicHashViewModel.swift in Sources */,
 				FA31BFD3223953F5008B9A81 /* AdsUnitID.swift in Sources */,
 				F859D34E24E6851600562FD1 /* HUDPresentable.swift in Sources */,
+				F859D35724E6924D00562FD1 /* CellLayoutItem.swift in Sources */,
 				F859D34F24E6851600562FD1 /* MessageDialogPresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

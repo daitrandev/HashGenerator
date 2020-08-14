@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BasicHashViewController: UIViewController {
+class BasicHashViewController: BaseViewController {
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var outputTableView: UITableView!
     @IBOutlet weak var outputTableViewHeightConstraint: NSLayoutConstraint!
@@ -50,26 +50,14 @@ class BasicHashViewController: UIViewController {
             .observe(\.contentSize) { [weak self] (tableView, change) in
                 self?.outputTableViewHeightConstraint.constant = tableView.contentSize.height
             }
-        
-        navigationController?.navigationBar.titleTextAttributes = [
-            .font: UIFont(name: "Roboto-Medium", size: 18)!
-        ]
         navigationItem.title = "Basic Hash"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            image: UIImage(named: "refresh"),
-            style: .plain,
-            target: self,
-            action: #selector(didTapRefresh)
-        )
-        navigationController?.navigationBar.tintColor = UIColor.pinkCoral
-        tabBarController?.tabBar.tintColor = UIColor.pinkCoral
     }
     
     @objc private func inputTextEditingChanged() {
         viewModel.inputText = inputTextField.text
     }
     
-    @objc private func didTapRefresh() {
+    @objc override func didTapRefresh() {
         inputTextField.text = nil
         viewModel.inputText = nil
     }

@@ -12,16 +12,11 @@ protocol BasicHashViewModelDelegate: class, MessageDialogPresentable, HUDPresent
 
 protocol BasicHashViewModelType: class {
     var inputText: String? { get set }
-    var cellLayoutItems: [BasicHashViewModel.CellLayoutItem] { get }
+    var cellLayoutItems: [CellLayoutItem] { get }
     var delegate: BasicHashViewModelDelegate? { get set }
 }
 
 class BasicHashViewModel: BasicHashViewModelType {
-    struct CellLayoutItem {
-        let algorithm: HashAlgorithm
-        var content: String?
-    }
-    
     var inputText: String? {
         didSet {
             guard let inputText = inputText, !inputText.isEmpty else {

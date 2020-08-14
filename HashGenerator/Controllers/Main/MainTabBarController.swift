@@ -18,16 +18,16 @@ class MainTabBarController: UITabBarController {
         hashViewNavController.tabBarItem.image = UIImage(named: "hash")
         hashViewNavController.title = "Hash"
         
-//        let hmacViewController = HMACViewController()
-//        let hmacViewNavController = UINavigationController(rootViewController: hmacViewController)
-//        hmacViewNavController.tabBarItem.image = UIImage(named: "key")
-//        hmacViewNavController.title = "Key"
+        let hmacViewController = HMACViewController()
+        let hmacViewNavController = UINavigationController(rootViewController: hmacViewController)
+        hmacViewNavController.tabBarItem.image = UIImage(named: "key")
+        hmacViewNavController.title = "Key"
 //
 //        let comparisionViewController = ComparisionViewController()
 //        let comparisionViewNavController = UINavigationController(rootViewController: comparisionViewController)
 //        comparisionViewNavController.tabBarItem.image = UIImage(named: "magnifier")
 //        comparisionViewNavController.title = "Comparision"
         
-        viewControllers = [hashViewNavController]//, hmacViewNavController, comparisionViewNavController]
+        viewControllers = [hashViewNavController, hmacViewNavController]// comparisionViewNavController]
     }
 }

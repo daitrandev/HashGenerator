@@ -7,54 +7,100 @@
 //
 
 import UIKit
-import MessageUI
 
 class HMACViewController: BaseViewController {
+    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var inputKeyTextField: UITextField!
+    @IBOutlet weak var outputTableView: UITableView!
+    @IBOutlet weak var outputTableViewHeightConstraint: NSLayoutConstraint!
     
-    var baseModels = [
-        BaseModel(textFieldText: "", labelText: "KEY", isTextFieldEnabled: true),
-        BaseModel(textFieldText: "", labelText: "INPUT", isTextFieldEnabled: true),
-        BaseModel(textFieldText: "", labelText: "MD5", isTextFieldEnabled: false),
-        BaseModel(textFieldText: "", labelText: "SHA1", isTextFieldEnabled: false),
-        BaseModel(textFieldText: "", labelText: "SHA224", isTextFieldEnabled: false),
-        BaseModel(textFieldText: "", labelText: "SHA256", isTextFieldEnabled: false),
-        BaseModel(textFieldText: "", labelText: "SHA384", isTextFieldEnabled: false),
-        BaseModel(textFieldText: "", labelText: "SHA512", isTextFieldEnabled: false)
-    ]
+    private var contentSizeObserver: NSKeyValueObservation?
+    private let cellId = "cellId"
+    private var viewModel: HMACViewModelType
+    
+    init() {
+        viewModel = HMACViewModel()
+        super.init(nibName: String(describing: HMACViewController.self), bundle: .main)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    deinit {
+        contentSizeObserver?.invalidate()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }
-    
-    @objc override func refreshButtonAction() {
+        viewModel.delegate = self
+        [inputTextField, inputKeyTextField].forEach {
+            $0.addTarget(self, action: #selector(textFieldEditingChanged), for: .editingChanged)
+        }
         
+        outputTableView.register(
+            UINib(
+                nibName: String(describing: HashOutputCell.self),
+                bundle: .main
+            ),
+            forCellReuseIdentifier: cellId
+        )
+        outputTableView.dataSource = self
+        
+        contentSizeObserver = outputTableView
+            .observe(\.contentSize) { [weak self] (tableView, change) in
+                self?.outputTableViewHeightConstraint.constant = tableView.contentSize.height
+            }
+        
+        navigationItem.title = "HMAC"
     }
     
-    override func updateColor(isLightTheme: Bool) {
-        super.updateColor(isLightTheme: isLightTheme)
-        guard let visibleCells = tableView.visibleCells as? [BaseCell] else { return }
-        for i in 0..<visibleCells.count {
-            visibleCells[i].backgroundColor = view.backgroundColor
-            //            visibleCells[i].updateColor()
-            //            let tag = visibleCells[i].tag
-            //            visibleCells[i].base = bases[tag]
+    @objc private func textFieldEditingChanged(_ sender: UITextField) {
+        if sender == inputTextField {
+            viewModel.inputText = inputTextField.text
+        } else {
+            viewModel.inputKey = inputKeyTextField.text
         }
     }
 }
 
-extension HMACViewController {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return baseModels.count
+extension HMACViewController: HMACViewModelDelegate {
+    func reloadOutputTableView() {
+        guard let cells = outputTableView.visibleCells as? [HashOutputCell] else { return }
+        for index in 0..<cells.count {
+            cells[index].configure(with: viewModel.cellLayoutItems[index])
+        }
+    }
+}
+
+extension HMACViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
+        return viewModel.cellLayoutItems.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! BaseCell
-        cell.configure(with: baseModels[indexPath.row])
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView
+            .dequeueReusableCell(
+                withIdentifier: cellId,
+                for: indexPath
+            ) as? HashOutputCell else { return UITableViewCell() }
+        cell.configure(with: viewModel.cellLayoutItems[indexPath.row])
+        cell.delegate = self
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 65
+}
+
+extension HMACViewController: HashOutputCellDelegate {
+    func didTapCopy(string: String) {
+        UIPasteboard.general.string = string
+        showMessageDialog(
+            title: "Success",
+            message: "Copied",
+            actionName: "Close",
+            action: nil
+        )
     }
 }

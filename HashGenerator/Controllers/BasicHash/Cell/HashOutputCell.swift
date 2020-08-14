@@ -28,7 +28,7 @@ class HashOutputCell: UITableViewCell {
         copyButton.addTarget(self, action: #selector(didTapCopy), for: .touchUpInside)
     }
     
-    func configure(with item: BasicHashViewModel.CellLayoutItem) {
+    func configure(with item: CellLayoutItem) {
         nameLabel.text = item.algorithm.rawValue
         contentTextField.text = item.content
     }
